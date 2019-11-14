@@ -1,4 +1,6 @@
-<?php define( 'MYTHEMEDIR', get_template_directory_uri() ); ?>
+<?php define( 'MYTHEMEDIR',""); ?>
+
+<!-- php -S localhost:8000 -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -44,24 +46,26 @@
             <nav>
                 <ul>
                     <li><a href="#" class="active">Home</a></li>
+                    
                     <div class="dropdown">
                         <button class="dropbtn">Destination 
                         <i class="fa fa-caret-down"></i>
                         </button>
                         <div class="dropdown-content">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
                         </div>
                     </div>
+                    
                     <div class="dropdown">
                         <button class="dropbtn">Trip Types 
                         <i class="fa fa-caret-down"></i>
                         </button>
                         <div class="dropdown-content">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
                         </div>
                     </div>
                     <li><a href="#">Blog</a></li>
@@ -178,7 +182,7 @@
         <br>
         <br>
         <br>
-        
+       <!-- section 2  -->
         <div class="section-2">
             <div class="section-wrapper">
                 <div class="section__header">
@@ -372,6 +376,112 @@
                             </div>
                         </div>
             </div>
+            <!-- ENd of section 3 -->
+
+            <!-- section 4 -->
+            <div class="section-4">
+            <div class="section-wrapper">
+                <div class="section__header">
+                    <div class="title">
+                        <h2>Popular Destination</h2>
+                        <p>Just select where you want to go, we take care of rest</p>
+                    </div>
+                    <div class="button-item">
+                                <button class="bttn text-black title-btn">view</button>
+                            </div>
+
+                    
+                </div>
+                <div class="section04-gallery">
+                    <section class="grid-box">
+                                    <ul>
+                                      <li>
+                                        <figure>
+                                          <!-- Photo by Quentin Dr on Unsplash -->
+                                          <img src="<?php echo MYTHEMEDIR; ?>/image/grid-2.jpg">
+                                          <div class="overlay">
+                                                
+                                                <div class="image-overlay overlay__bottom">
+                                                    <div class="left">
+                                                        <h1>Cycling</h1>
+                                                        <span><i class="fas fa-map-marker-alt"></i> Neitherland </span>
+                                                    </div>
+                                                    <div class="right ">
+                                                        <span class="right-arrow"><i class="fas fa-arrow-right"></i></span>
+                                                    
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                        </figure>
+                                        
+                                      </li>
+                                      <li>
+                                        <figure>
+                                          
+                                          <img src="<?php echo MYTHEMEDIR; ?>/image/grid-2.jpg">
+                                          <div class="overlay">
+                                                
+                                                <div class="image-overlay overlay__bottom">
+                                                    <div class="left">
+                                                        <h1>Cycling</h1>
+                                                        <span><i class="fas fa-map-marker-alt"></i> Neitherland </span>
+                                                    </div>
+                                                    <div class="right ">
+                                                        <span class="right-arrow"><i class="fas fa-arrow-right"></i></span>
+                                                    
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                        </figure>
+                                        
+                                       
+                                      </li>
+                                      <li>
+                                        <figure>
+                                          <!-- Photo by Rawpixel on Unsplash -->
+                                          <img src="<?php echo MYTHEMEDIR; ?>/image/grid-2.jpg" alt="Three different glasses of beer">
+                                          <div class="overlay">
+                                                
+                                                <div class="image-overlay overlay__bottom">
+                                                    <div class="left">
+                                                        <h1>Cycling</h1>
+                                                        <span><i class="fas fa-map-marker-alt"></i> Neitherland </span>
+                                                    </div>
+                                                    <div class="right ">
+                                                        <span class="right-arrow"><i class="fas fa-arrow-right"></i></span>
+                                                    
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                        </figure>
+                                        
+                                      </li>
+                                      <li>
+                                        <figure>
+                                          <!-- Photo by Rawpixel on Unsplash -->
+                                          <img src="<?php echo MYTHEMEDIR; ?>/image/grid-2.jpg" alt="Three different glasses of beer">
+                                          <div class="overlay">
+                                                
+                                                <div class="image-overlay overlay__bottom">
+                                                    <div class="left">
+                                                        <h1>Cycling</h1>
+                                                        <span><i class="fas fa-map-marker-alt"></i> Neitherland </span>
+                                                    </div>
+                                                    <div class="right ">
+                                                        <span class="right-arrow"><i class="fas fa-arrow-right"></i></span>
+                                                    
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                        </figure>
+                                        
+                                      </li>
+                                </ul>
+                            </section>
+     
+                    </div>
+                </div>
+                <!-- End of section4  -->
         </div>
     </div>
     <!-- bootstrap script link -->
