@@ -1,6 +1,4 @@
-<?php define( 'MYTHEMEDIR',""); ?>
-
-<!-- php -S localhost:8000 -->
+<?php define( 'MYTHEMEDIR', get_template_directory_uri() ); ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -307,6 +305,7 @@
      
                     </div>
                 </div>
+            </div>
                 <!-- End of section 2 -->
 
                 <!-- section 3 -->
@@ -397,7 +396,7 @@
                                     <ul>
                                       <li>
                                         <figure>
-                                          <!-- Photo by Quentin Dr on Unsplash -->
+                                          
                                           <img src="<?php echo MYTHEMEDIR; ?>/image/grid-2.jpg">
                                           <div class="overlay">
                                                 
@@ -438,7 +437,7 @@
                                       </li>
                                       <li>
                                         <figure>
-                                          <!-- Photo by Rawpixel on Unsplash -->
+                                          
                                           <img src="<?php echo MYTHEMEDIR; ?>/image/grid-2.jpg" alt="Three different glasses of beer">
                                           <div class="overlay">
                                                 
@@ -458,7 +457,7 @@
                                       </li>
                                       <li>
                                         <figure>
-                                          <!-- Photo by Rawpixel on Unsplash -->
+                                          
                                           <img src="<?php echo MYTHEMEDIR; ?>/image/grid-2.jpg" alt="Three different glasses of beer">
                                           <div class="overlay">
                                                 
@@ -481,8 +480,374 @@
      
                     </div>
                 </div>
+            </div>
                 <!-- End of section4  -->
-        </div>
+
+                <!-- secton 5 -->
+                <div class="section-5">
+                    <div class="section-wrapper">
+                        <div class="flex-box">
+                            <div class="flex__image-box">
+                                <img src="<?php echo MYTHEMEDIR; ?>/image/grid-2.jpg" alt="">
+                            </div>
+                            <div class="flex__description-box">
+                               <div class="title">
+                                    <h3>Discover the joy of<br> skiing with us</h3>
+                               </div>
+                               <div class="review-box">
+                                   <p>$720</p>
+                                   <div class="review-item__right">
+                                        <span>
+                                            <i class="star1 fas fa-star"></i>
+                                            <i class="star2 fas fa-star"></i>
+                                            <i class="star3 fas fa-star"></i>
+                                            <i class="star4 fas fa-star"></i>
+                                            <i class="star5 fas fa-star"></i>
+                                        </span>
+                                        <p>4 reviews</p>
+                                   </div> 
+
+
+                               </div>
+                               <div class="flex__description">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Eligendi, natus. Laudantium odio id, 
+                        
+                               </div>
+                               <div class="button__box">
+                                    <button class="btn-prop">Explore All Adventure</button>
+                               </div>
+                               <div class="flex__footer">
+                                   <div class="bottom-position">
+                                       <div class="flex-define">
+                                        <div class="column">
+                                                <div class="title"><p>Fixed Departure</p> </div>
+                                                <div class="detail"><p>14 Nov - 18 Nov</p></div>
+                                            </div>
+                                            <div class="column">
+                                                    <div class="title"><p>Trip Type</p></div>
+                                                <div class="detail"><p>Adventure Trip</p></div>
+                                            </div>
+                                            <div class="column">
+                                                    <div class="title"><p>Group Sizes</p></div>
+                                                <div class="detail"><p>15 pax</p></div>
+                                            </div>
+                                            <div class="column">
+                                                    <div class="title"><p>Location</p></div>
+                                                <div class="detail"><p>Austria</p></div>
+                                            </div>
+                                       </div>
+                                        
+                                   </div>
+                                  
+                                  
+
+                               </div>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+
+                
+                <!-- End of section 5 -->
+                <br>
+                <br>
+                <br>
+                <br>
+                 <!-- section 6  -->
+        <div class="section-6">
+            <div class="section-wrapper">
+                <div class="section__header">
+                    <div class="title">
+                        <h2>Popular tour packages</h2>
+                        <p>Just select where you want to go, we take care of rest</p>
+                    </div>
+                    <div class="button-item">
+                                <button class="bttn text-black title-btn">view</button>
+                            </div>
+
+                    
+                </div>
+                <div class="section06-gallery">
+                    <section class="grid-box">
+                                    <ul>
+                                      <li>
+                                        <figure>
+                                            <div class="image-top">
+                                                <img src="<?php echo MYTHEMEDIR; ?>/image/grid-2.jpg">
+                                                <div class="overlay">
+                                                    <div class="image-overlay overlay__bottom">
+                                                        <div class="left">
+                                                            <h2> <strike>$1500</strike></h2>
+                                                            <h1>$1000</h1>
+                                                            
+                                                        </div>
+                                                        <div class="right ">
+                                                            <button >Group Discount</button>
+                                                        
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                             
+                                            <div class="other-info">
+                                                    <div class="title">
+                                                        <h3>Holiday Inn Express Hotel</h3>
+                                                        <div class="address-time">
+                                                            <span><i class="fas fa-map-marker-alt"></i> <p>3 Days</p></span>
+                                                            <span><i class="fas fa-clock"></i><p>Thamel, Kathmandu</p></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="depature-time">
+                                                        <div class="title">
+                                                            <h3>next-depature</h3> 
+                                                        </div>
+                                                    <div class="dept-detail">
+                                                        <span><p id="date">Dec 10, 2019</p>- <p id="day-left">7</p> Spaces left</span>
+                                                        <span><p id="date">Dec 10, 2019</p>- <p id="day-left">7</p> Spaces left</span>
+                                                        <span><p id="date">Dec 10, 2019</p>- <p id="day-left">7</p> Spaces left</span>
+                                                    </div>
+
+                                                </div>
+                                                <div class="botton__box">
+                                                    <button class="btn__prop">view details</button>
+                                                </div>
+                                           </div>
+                                        </figure>
+                                        
+                                      </li>
+                                      <li>
+                                      <figure>
+                                            <div class="image-top">
+                                                <img src="<?php echo MYTHEMEDIR; ?>/image/grid-2.jpg">
+                                                <div class="overlay">
+                                                    <div class="image-overlay overlay__bottom">
+                                                        <div class="left">
+                                                            <h2> <strike>$1500</strike></h2>
+                                                            <h1>$1000</h1>
+                                                            
+                                                        </div>
+                                                        <div class="right ">
+                                                            <button >Group Discount</button>
+                                                        
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                             
+                                            <div class="other-info">
+                                                    <div class="title">
+                                                        <h3>Holiday Inn Express Hotel</h3>
+                                                        <div class="address-time">
+                                                            <span><i class="fas fa-map-marker-alt"></i> <p>3 Days</p></span>
+                                                            <span><i class="fas fa-clock"></i><p>Thamel, Kathmandu</p></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="depature-time">
+                                                        <div class="title">
+                                                            <h3>next-depature</h3> 
+                                                        </div>
+                                                    <div class="dept-detail">
+                                                        <span><p id="date">Dec 10, 2019</p>- <p id="day-left">7</p> Spaces left</span>
+                                                        <span><p id="date">Dec 10, 2019</p>- <p id="day-left">7</p> Spaces left</span>
+                                                        <span><p id="date">Dec 10, 2019</p>- <p id="day-left">7</p> Spaces left</span>
+                                                    </div>
+
+                                                </div>
+                                                <div class="botton__box">
+                                                    <button class="btn__prop">view details</button>
+                                                </div>
+                                           </div>
+                                        </figure>
+                                        </figure>
+                                        
+                                       
+                                      </li>
+                                      <li>
+                                      <figure>
+                                            <div class="image-top">
+                                                <img src="<?php echo MYTHEMEDIR; ?>/image/grid-2.jpg">
+                                                <div class="overlay">
+                                                    <div class="image-overlay overlay__bottom">
+                                                        <div class="left">
+                                                            <h2> <strike>$1500</strike></h2>
+                                                            <h1>$1000</h1>
+                                                            
+                                                        </div>
+                                                        <div class="right ">
+                                                            <button >Group Discount</button>
+                                                        
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                             
+                                            <div class="other-info">
+                                                    <div class="title">
+                                                        <h3>Holiday Inn Express Hotel</h3>
+                                                        <div class="address-time">
+                                                            <span><i class="fas fa-map-marker-alt"></i> <p>3 Days</p></span>
+                                                            <span><i class="fas fa-clock"></i><p>Thamel, Kathmandu</p></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="depature-time">
+                                                        <div class="title">
+                                                            <h3>next-depature</h3> 
+                                                        </div>
+                                                        <div class="dept-detail">
+                                                            <span><p id="date">Dec 10, 2019</p> - <p id="day-left">7</p> Spaces left</span>
+                                                            <span><p id="date">Dec 10, 2019</p> - <p id="day-left">7</p> Spaces left</span>
+                                                            <span><p id="date">Dec 10, 2019</p> - <p id="day-left">7</p> Spaces left</span>
+                                                        </div>
+
+                                                </div>
+                                                <div class="botton__box">
+                                                    <button class="btn__prop">view details</button>
+                                                </div>
+                                           </div>
+                                        </figure>
+                                        
+                                      </li>
+                                </ul>
+                            </section>
+     
+                    </div>
+                </div>
+            </div>
+                <!-- End of section 6 -->
+
+                <!-- Section 7 -->
+                <div class="section-7">
+                    <div class="section-wrapper">
+                        <div class="section-container">
+                            <div class="flex__item">
+                                <h2>762</h2>
+                                <p>No. of Customer</p>
+
+                            </div>
+                            <div class="flex__item">
+                                <h2>603</h2>
+                                <p>No. of Trips</p>
+                            </div>
+                            <div class="flex__item">
+                                <h2>52</h2>
+                                <p>Trips Types</p>
+                            </div>
+                            <div class="flex__item">
+                                <h2>108</h2>
+                                <p>Adventure Activity</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+                <!-- End of section 7 -->
+            <br><br><br><br>
+            
+                <!-- section 8 -->
+            
+        <div class="section-2">
+            <div class="section-wrapper">
+                <div class="section__header">
+                    <div class="title">
+                        <h2>Popular tour packages</h2>
+                        <p>Just select where you want to go, we take care of rest</p>
+                    </div>
+                    <div class="button-item">
+                                <button class="bttn text-black title-btn">view</button>
+                            </div>
+
+                    
+                </div>
+                <div class="section02-gallery">
+                    <section class="grid-box">
+                                    <ul>
+                                      <li>
+                                        <figure>
+                                          <!-- Photo by Quentin Dr on Unsplash -->
+                                          <img src="<?php echo MYTHEMEDIR; ?>/image/grid-2.jpg">
+                                          <div class="overlay">
+                                                
+                                                <div class="position__bottom">
+                                                    <div class="info">
+                                                        <div class="top">
+                                                            <p>November 13, 2019</p>
+                                                            <h1>Where Should you<br> travel in october </h1>
+                                                        
+                                                        </div>
+                                                        <div class="bottom ">
+                                                            <button class="bttn">Read</button>
+                                                        
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div> 
+                                        </figure>
+                                        
+                                      </li>
+                                      <li>
+                                        <figure>
+                                          
+                                          <img src="<?php echo MYTHEMEDIR; ?>/image/grid-2.jpg">
+                                          <div class="overlay">
+                                                
+                                                <div class="position__bottom">
+                                                    <div class="info">
+                                                        <div class="top">
+                                                            <p>November 13, 2019</p>
+                                                            <h1> 
+                                                            Tips for your first solo adventure
+                                                            </h1>
+                                                        
+                                                        </div>
+                                                        <div class="bottom ">
+                                                            <button class="bttn">Read</button>
+                                                        
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div> 
+                                        </figure>
+                                        
+                                       
+                                      </li>
+                                      <li>
+                                        <figure>
+                                          <!-- Photo by Rawpixel on Unsplash -->
+                                          <img src="<?php echo MYTHEMEDIR; ?>/image/grid-2.jpg" alt="Three different glasses of beer">
+                                          <div class="overlay">
+                                                
+                                                <div class="position__bottom">
+                                                    <div class="info">
+                                                        <div class="top">
+                                                            <p>November 13, 2019</p>
+                                                            <h1>7 tips for nomads on<br> a budget trips</h1>
+                                                        
+                                                        </div>
+                                                        <div class="bottom ">
+                                                            <button class="bttn ">Read</button>
+                                                        
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div> 
+                                        </figure>
+                                        
+                                      </li>
+                                </ul>
+                            </section>
+     
+                    </div>
+                </div>
+            </div>
+                
+                <!-- End of section 8 -->
+            
+
+        
     </div>
     <!-- bootstrap script link -->
     <script src="<?php echo MYTHEMEDIR; ?>/js/bootstrap.min.js"></script>
