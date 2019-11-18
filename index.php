@@ -14,14 +14,9 @@
     <link rel="stylesheet" type="text/css" href="<?php echo MYTHEMEDIR; ?>/css/style.css">
      
     <!-- bootstrap -->
-    <link rel="stylesheet" type="text/css" href="<?php echo MYTHEMEDIR; ?>/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="<?php echo MYTHEMEDIR; ?>/css/bootstrap.min.css"> -->
     <!-- end of bootstrap link -->
 
-    <!-- slider  -->
-    
-	 <!--<link rel="stylesheet" type="text/css" href="<?php echo MYTHEMEDIR; ?>/css/component.css" />
-    <script src="<?php echo MYTHEMEDIR; ?>/js/modernizr.custom.js"></script>  -->
-    <!-- end of slider js -->
 
     <!-- google font link-->
     <link rel="stylesheet" type="text/css"  href="https://fonts.googleapis.com/css?family=Poppins&display=swap">
@@ -104,16 +99,25 @@
             <div class="main__container">
                 <!-- background image slider -->
                 <div class="main__slider">
-                    <ul id="cbp-bislideshow" class="cbp-bislideshow">
-                            <!-- <li><img src="<?php echo MYTHEMEDIR; ?>/image/1.jpg" alt="image01"/></li> -->
-                            <li><img src="<?php echo MYTHEMEDIR; ?>/image/landing-1-bg.png" alt="image02"/></li>
-                            
-                        </ul>
-                        <div id="cbp-bicontrols" class="cbp-bicontrols">
-                            <span class="cbp-biprev"></span>
-                            <span class="cbp-bipause"></span>
-                            <span class="cbp-binext"></span>
-                        </div>
+                    
+                    <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                        <img src="<?php echo MYTHEMEDIR; ?>/image/landing-1-bg.png" alt="image02"/>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="<?php echo MYTHEMEDIR; ?>/image/landing-1-bg.png" alt="image02"/>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="<?php echo MYTHEMEDIR; ?>/image/landing-1-bg.png" alt="image02"/>
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    </div>
                     
                 </div>
                 <!-- end of background-image slider -->
@@ -138,40 +142,30 @@
                 </div>
 
                 <div class="botton-overlay">
-                    <div class="description-box">
+                    <form class="description-box" action="">
                         <div class="item item-1">
-                            <div class="dropdown">
-                                <button class="dropbtn">Neitherland 
-                                <i class="fa fa-caret-down"></i>
-                                </button>
-                                <div class="dropdown-content">
-                                <a href="#">Link 1</a>
-                                <a href="#">Link 2</a>
-                                <a href="#">Link 3</a>
-                                </div>
-                            </div>
+                            <select>
+                                <option value="Neitherland" selected>Neitherland</option>
+                                <option value="Nepal">Nepal</option>
+                                <option value="America">America</option>
+                                <option value="Cananda">Cananda</option>
+                            </select>
                         </div>
                         <div class="item item-2">
-                        <div class="dropdown">
-                                <button class="dropbtn">Trip Types 
-                                <i class="fa fa-caret-down"></i>
-                                </button>
-                                <div class="dropdown-content">
-                                <a href="#">Link 1</a>
-                                <a href="#">Link 2</a>
-                                <a href="#">Link 3</a>
-                                </div>
-                            </div>
+                            <select>
+                                <option value="Trip Type">Trip Type</option>
+                                <option value="List 1">List 1</option>
+                                <option value="List 2">List 2</option>
+                                <option value="List 3">List 3</option>
+                            </select>
                         </div>
                         <div class="item item-3">
                             <input type="search" placeholder="Keyword" id="search" >
                         </div>
                         <div class="item item-4">
-                            <p>Search</p>
+                            <button>Search</button>
                         </div>
-                        
-                    </div>
-
+                        </form>
                 </div>
             </div>
         </main>
@@ -857,8 +851,7 @@
                                 <div class="line"></div>
                             </div> 
                         </div>
-                        <!-- slider box -->
-                        <!-- https://www.codeply.com/go/tBbcVXe1xZ -->
+                       
                         <div class="slider-box">
                             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                                 <ol class="carousel-indicators">
@@ -949,6 +942,34 @@
 
         
     </div>
+    <script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
     <!-- bootstrap script link -->
     <script src="<?php echo MYTHEMEDIR; ?>/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.0.0.js"></script>

@@ -51,10 +51,14 @@ a{
     .dropdown-content {
         display: none;
         position: absolute;
-        min-width: 160px;
+        min-width: 142px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
-        background:$color-yellow;
+        background:white;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+
 
         a {
             float: none;
@@ -101,10 +105,21 @@ a{
                 li{
                     list-style: none;
                     padding:0 20px;
+                    
                     a{
                         text-decoration: none;
                         color:black;
                         font-size: 14px;
+                        &:focus-within{
+                            color:$color-yellow;
+                        }
+                        &:focus{
+                            color:$color-yellow;
+                        }
+                        &:hover{
+                            color:$color-yellow;
+                        }
+                        
                     }
                 }
                 .dropdown {
@@ -119,14 +134,22 @@ a{
                         background-color: inherit;
                         margin: 0;
                         font-size: 14px;
+                        &:focus{
+                            color:$color-yellow;
+                        }
+                        &:hover{
+                            color:$color-yellow;
+                        }
                     }
                     .dropdown-content {
                         display: none;
                         position: absolute;
-                        min-width: 160px;
+                        min-width: 142px;
                         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
                         z-index: 2000;
-                        background:$color-yellow;
+                        border-top-right-radius: 20px;
+                        border-bottom-right-radius: 20px;
+                        border-bottom-left-radius: 20px;
 
                         a {
                             float: none;
@@ -136,12 +159,21 @@ a{
                             display: block;
                             text-align: left;
                             font-size: 14px;
+                            &:focus-within{
+                                color:$color-yellow;
+                            }
+                            &:hover{
+                                color:$color-yellow;
+                            }
                         }
                         
                     }
                     &:hover .dropdown-content {
-                        display: block;
+                        display:block;
                     }
+                    &:focus-within .dropdown-content{
+                        display:initial;
+                }
                 }
                        
             } 
@@ -232,11 +264,88 @@ a{
             width:90%;
             position: relative;
             height: 630px;
+            /* Slideshow container */
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    border:1px solid white;
+    border: none;
+    background: #FFFFFF;
+    display:block;
+    right:0;
+    top: 45%;
+    padding: 16px;
+    margin-top: -22px;
+    margin-right:30px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    width: 55px;
+    height: 55px;
+    border-radius: 20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    &:hover{
+        background: #a4a4a4;
+        opacity:0.7;
+        
+    }
+  }
+  
+  /* Position the "next button" to the right */
+  
+  .next {
+    top:55%;
+  }
+  
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
             
             img{
                 width:100%;
-                object-fit: cover;
-                
+                height:630px;
+                object-fit: cover; 
             }
             .main-overlay{
                 position: absolute;
@@ -288,8 +397,8 @@ a{
 
                 .description-box{
                     display:flex;
-                    
                     align-items: center;
+                    justify-content: space-between;
                     max-width:1003px;
                     margin:0 auto;
                     height:70px;
@@ -331,23 +440,32 @@ a{
 
                     .item{
                         border-right:1px solid black;
-
                         font-size:14px;
-                        
-                        
-                        
                         &:last-child{
                             border-right:none;
                             border-top-right-radius: 20px;
                             border-bottom-right-radius: 20px;
                         }
                         &:nth-child(3){
-                            border-right:none
+                            border-right:none;   
                         }
-                        p{
-                            displaY:flex;
-                            align-items:center;
+                        select{
+                             border:none;
+                            outline:none;
+                            scroll-behavior: smooth;
+                            padding-right:4rem;
+                            option{
+                                border:none;
+                            }
+                        }
+                        button{
                             margin:0;
+                            height:70px;
+                            border-top-right-radius: 20px;
+                            border-bottom-right-radius: 20px;
+                            border:none;
+                            outline:none;
+                            background: $color-yellow;
                         }
                         .dropdown{
                             i{
@@ -403,8 +521,9 @@ a{
                 li {
                     border: 1px solid #E2E2E2;
                     border-radius: .5rem;
+                    transition: 0.5s;
                     &:hover{
-                        box-shadow: 10px 10px 20px rgba($color: #000000, $alpha: 0.3);
+                        box-shadow: 0px 0px 20px rgba($color: #000000, $alpha: 0.3);
 
 
                     }
@@ -444,7 +563,6 @@ a{
                                 width:100%;
                                 display:flex;
                                 justify-content: space-between;
-                
                                 padding:0 20px;
                                 .left{
                                     display:flex;
@@ -556,11 +674,11 @@ a{
 
                 li {
                     border: 1px solid #E2E2E2;
+                    background:#F8F8F8;
                     border-radius: .5rem;
                     &:hover{
                         box-shadow: 10px 10px 20px rgba($color: #000000, $alpha: 0.3);
-
-
+                        border:none;
                     }
                     figure {
                         max-height: 200px;
